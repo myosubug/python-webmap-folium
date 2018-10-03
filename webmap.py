@@ -18,10 +18,18 @@ def color_generator(ppl):
 
 map = folium.Map(location=[51.04, -114.062], zoom_start=3)
 
-fg = folium.FeatureGroup(name="Base")
+fgp = folium.FeatureGroup(name="Top 20 Canadian Cities by Population")
 
 for lt, ln, pp, nm in zip(lat, lon, pop, name):
-    fg.add_child(folium.CircleMarker(location=[lt,ln], popup=nm, color='grey', radius=3, fill_color=color_generator(pp), fill_opacity=1))
+    fgp.add_child(folium.CircleMarker(location=[lt,ln], popup=nm, color='grey', radius=3, fill_color=color_generator(pp), fill_opacity=1))
 
-map.add_child(fg)
+fgw = folium.FeatureGroup(name="World Layer")
+fgw.add_child(folium.GeoJson(data=(open('world.json', 'r', encoding='utf-8-sig').read())))
+
+
+
+
+map.add_child(fgp)
+map.add_child(fgw)
+map.add_child(folium.LayerControl())
 map.save("webmap.html")
