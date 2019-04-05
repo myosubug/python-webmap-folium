@@ -2,8 +2,8 @@
 
 This is an app that can:
 
-display world map
-toggle two filters on the world map
+* display world map
+* toggle two filters on the world map
 
 ## Live example
 
