@@ -5,7 +5,7 @@ index.html is created py folium on webmap.py.
 This is an app that can:
 
 * display world map
-* toggle two filters on the world map
+* toggle two filters on the world map (Top 10 Canadian cities by population, colored from Red to green, highest to lowest)
 
 ## Live example
 
