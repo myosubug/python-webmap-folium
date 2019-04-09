@@ -1,5 +1,7 @@
 # Web map created by folium, python
 
+index.html is created py folium, 
+
 This is an app that can:
 
 * display world map
