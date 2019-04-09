@@ -1,6 +1,6 @@
 # Web map created by folium, python
 
-index.html is created py folium, 
+index.html is created py folium on webmap.py.
 
 This is an app that can:
 
