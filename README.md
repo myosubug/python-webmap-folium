@@ -1,4 +1,4 @@
-# Web map created by folium, python
+# Web map created by folium
 
 index.html is created py folium on webmap.py.
 
